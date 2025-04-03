@@ -1,0 +1,26 @@
+﻿@model IEnumerable<CrudProdutos.Models.Produto>
+
+<h2>Lista de Produtos</h2>
+<a href="/Produtos/Create">Criar Novo Produto</a>
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Nome</td>
+                <td>@item.Preco</td>
+                <td>
+                    <a href="/Produtos/Edit/@item.Id">Editar</a> |
+                    <a href="/Produtos/Delete/@item.Id">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

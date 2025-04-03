@@ -1,0 +1,8 @@
+﻿@model CrudProdutos.Models.Produto
+
+<h2>Excluir Produto</h2>
+<p>Tem certeza que deseja excluir: @Model.Nome?</p>
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Confirmar Exclusão</button>
+</form>

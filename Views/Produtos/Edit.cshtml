@@ -1,0 +1,13 @@
+﻿@model CrudProdutos.Models.Produto
+
+<h2>Editar Produto</h2>
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <label>Nome:</label>
+    <input asp-for="Nome" />
+    <br />
+    <label>Preço:</label>
+    <input asp-for="Preco" />
+    <br />
+    <button type="submit">Salvar</button>
+</form>

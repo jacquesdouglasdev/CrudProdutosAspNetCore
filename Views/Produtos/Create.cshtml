@@ -1,0 +1,12 @@
+﻿@model CrudProdutos.Models.Produto
+
+<h2>Criar Produto</h2>
+<form asp-action="Create" method="post">
+    <label>Nome:</label>
+    <input asp-for="Nome" />
+    <br />
+    <label>Preço:</label>
+    <input asp-for="Preco" />
+    <br />
+    <button type="submit">Salvar</button>
+</form>
